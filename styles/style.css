@@ -1,0 +1,130 @@
+:root {
+  --color-pale-pink: #f9d7d7;
+  --color-pastel-pink: #f3e2e2;
+  --color-light-grayish-pink: #f8f4f4;
+  --color-medium-gray: #d4c1c1;
+  --color-dark-gray: #c5abab;
+  --color-rich-red: #1b1818;
+}
+
+body {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: var(--color-rich-red);
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+}
+
+.article-container {
+  display: flex;
+  justify-content: center;
+  padding-inline: 4em;
+  background-color: var(--color-light-grayish-pink);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 0 2.5rem;
+  background-color: var(--color-rich-red);
+  color: var(--color-light-grayish-pink);
+}
+
+@font-face {
+  font-family: "Ancient-Greek";
+  src: url("../fonts/DalekPinpointBold.woff") format("woff");
+}
+
+header h1 {
+  font-family: "Ancient-Greek", "Palatino Linotype", "Book Antiqua", Palatino,
+    serif;
+  font-size: auto;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-weight: bold;
+  margin: 1em 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 1em;
+}
+
+p {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 1em 0;
+}
+
+ul,
+ol {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 1em;
+  margin: 1em 0;
+  padding-left: 2em;
+}
+
+li {
+  margin: 0.5em 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border: 5px solid #222;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.left {
+  display: flex;
+  justify-content: left;
+}
+
+.right {
+  display: flex;
+  justify-content: right;
+}
+
+.background-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url("../images/greektheatre.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
